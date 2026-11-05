@@ -38,21 +38,23 @@ Following searches for all the sites that is in the domain yahoo.com
 
 filetype: This operator allows you to search for files of a specific type. For example, "filetype:pdf" would search for all PDF files.
 Following searches for pdf file in the domain yahoo.com
-<img width="938" height="440" alt="image" src="https://github.com/user-attachments/assets/bdbb7851-a115-4a0e-89cc-926776acf548" />
-
+<img width="956" height="449" alt="Screenshot 2026-11-05 154624" src="https://github.com/user-attachments/assets/da60821a-16d0-4ad5-97ca-56171256c851" />
 
 
 intext: This operator allows you to search for pages that contain specific text within the body of the page. For example, "intext:password" would search for pages that contain the word "password" within the body of the page.
+<img width="953" height="446" alt="image" src="https://github.com/user-attachments/assets/057b4f97-17fe-40ae-a8d5-57e858c11875" />
 
 
 inurl: This operator allows you to search for pages that contain specific text within the URL. For example, "inurl:admin" would search for pages that contain the word "admin" within the URL.
+<img width="957" height="386" alt="image" src="https://github.com/user-attachments/assets/7d23f714-3881-4d9e-94f9-6abc50f56e3f" />
 
 intitle: This operator allows you to search for pages that contain specific text within the title tag. For example, "intitle:index of" would search for pages that contain "index of" within the title tag.
+<img width="959" height="446" alt="image" src="https://github.com/user-attachments/assets/884b6f5d-32a7-4e59-9a0a-6f13fe3b1fca" />
 
 link: This operator allows you to search for pages that link to a specific URL. For example, "link:example.com" would search for pages that link to the example.com domain.
+<img width="947" height="446" alt="image" src="https://github.com/user-attachments/assets/eaa442c8-25f8-4c27-a65d-e2b04c9f886e" />
 
-cache: This operator allows you to view the cached version of a page. For example, "cache:example.com" would show the cached version of the example.com website.
-
+cache: This operator allows you to view the cached version of a page. For example, "cache:example.com" would show the cached version of the example.com websit
  
 #DNS Enumeration
 
