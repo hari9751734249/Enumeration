@@ -55,9 +55,10 @@ link: This operator allows you to search for pages that link to a specific URL. 
 <img width="947" height="446" alt="image" src="https://github.com/user-attachments/assets/eaa442c8-25f8-4c27-a65d-e2b04c9f886e" />
 
 cache: This operator allows you to view the cached version of a page. For example, "cache:example.com" would show the cached version of the example.com websit
+<img width="940" height="440" alt="image" src="https://github.com/user-attachments/assets/9f1f17c3-8f39-4fed-9c27-0ff89e44d775" />
+
  
 #DNS Enumeration
-
 
 ##DNS Recon
 provides the ability to perform:
@@ -67,42 +68,81 @@ Perform common SRV Record Enumeration
 Top level domain expansion
 ## OUTPUT:
 
+<img width="425" height="393" alt="image" src="https://github.com/user-attachments/assets/15bf253a-4901-4e8a-af2a-358e385eeff6" />
 
 
 
 
 
 
-##dnsenum
+
+## dnsenum
 Dnsenum is a multithreaded perl script to enumerate DNS information of a domain and to discover non-contiguous ip blocks. The main purpose of Dnsenum is to gather as much information as possible about a domain. The program currently performs the following operations:
 
 Get the host’s addresses (A record).
+```
+dig yahoo.com A
+```
+<img width="1059" height="708" alt="image" src="https://github.com/user-attachments/assets/08f4c937-5521-4e2f-8b07-bd321fdfe66a" />
+
+
 Get the namservers (threaded).
+```
+dig yahoo.com NS
+```
+<img width="1920" height="892" alt="VirtualBox_Parrot Security 6 0_18_11_2026_08_44_41" src="https://github.com/user-attachments/assets/b53010a3-fc22-415c-b9bb-3d0b17edbde9" />
+
+
 Get the MX record (threaded).
+```
+dig yahoo.com MX
+```
+<img width="434" height="354" alt="image" src="https://github.com/user-attachments/assets/4007f563-9adb-41ad-83b8-724326c7d7fc" />
+
 Perform axfr queries on nameservers and get BIND versions(threaded).
-Get extra names and subdomains via google scraping (google query = “allinurl: -www site:domain”).
-Brute force subdomains from file, can also perform recursion on subdomain that have NS records (all threaded).
-Calculate C class domain network ranges and perform whois queries on them (threaded).
-Perform reverse lookups on netranges (C class or/and whois netranges) (threaded).
-Write to domain_ips.txt file ip-blocks.
-This program is useful for pentesters, ethical hackers and forensics experts. It also can be used for security tests.
+```
+dig @ns1.yahoo.com yahoo.com axfr
+```
+<img width="586" height="212" alt="image" src="https://github.com/user-attachments/assets/554083ed-9a78-4b09-ac37-56e5aad9d1b7" />
 
 
-##smtp-user-enum
+##DNS Enumeration using dnsenum:
+```
+dnsenum yahoo.com
+```
+<img width="524" height="393" alt="image" src="https://github.com/user-attachments/assets/539c1846-c71b-4dc9-b8e4-33030aa07529" />
+
+
+
+## smtp-user-enum
 Username guessing tool primarily for use against the default Solaris SMTP service. Can use either EXPN, VRFY or RCPT TO.
-
 
 In metasploit list all the usernames using head /etc/passwd or cat /etc/passwd:
 
 select any username in the first column of the above file and check the same
+## output
+<img width="720" height="400" alt="VirtualBox_metasplot_18_11_2026_08_55_08" src="https://github.com/user-attachments/assets/2dcb25c5-5610-4253-84a8-0c72bb74b5f9" />
+
+<img width="613" height="401" alt="image" src="https://github.com/user-attachments/assets/eb0a789e-2a34-458c-b40d-c67ff5734215" />
 
 
-#Telnet for smtp enumeration
+
+
+
+## Telnet for smtp enumeration
+
 Telnet allows to connect to remote host based on the port no. For smtp port no is 25
 telnet <host address> 25 to connect
 and issue appropriate commands
   
- ##Output
+ ## Output
+ <img width="1753" height="897" alt="image" src="https://github.com/user-attachments/assets/8e8b80df-fab8-40e2-9391-fcce3eaf28a9" />
+
+ 
+ 
+ 
+
+
   
   
 
@@ -112,6 +152,8 @@ The smtp-enum-users.nse script attempts to enumerate the users on a SMTP server 
 
 
 ## OUTPUT:
+<img width="2094" height="751" alt="image" src="https://github.com/user-attachments/assets/af8f9974-2e0e-49ae-a5db-8d8ff68bc32e" />
+
 
 
 ## RESULT:
